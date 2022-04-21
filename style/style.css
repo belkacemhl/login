@@ -1,0 +1,384 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* html and body reset */
+
+html {
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main container ,left side  , right side ,footer setup */
+
+.main-container {
+    height: 100vh;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: 1fr 0.04fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.left-side {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.283fr 1fr 0.451fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5rem;
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: #1DAE44;
+}
+
+.right-side {
+    padding: 5rem;  
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.footer {
+    grid-area: 2 / 1 / 3 / 3;
+    background-color: #1DAE44;
+    color: #fff;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* left side elements styling */
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 2rem;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.booking-illustration {
+    grid-area: 2 / 1 / 3 / 2; 
+    position: relative;
+}
+
+#booking-illustration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.desc {
+    grid-area: 3 / 1 / 4 / 2; 
+    padding: 2rem;
+    color: #fff;
+}
+
+.desc h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+}
+
+.desc p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/* right side elements styling */
+
+.login-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.login-container a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.login-container h2 {
+  text-align: center;
+  font-size: 6.5rem;
+  font-weight: 600;
+  margin-bottom: 8.5rem;
+}
+
+.login-container input {
+  height: 8.5rem;
+  width: 100%;
+  background-color: #F0F9F3;
+  border: none;
+  border-radius: 1rem;
+  padding: 3rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: black;
+}
+
+.login-container ::placeholder {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #46C268;
+}
+
+.login-container textarea:focus, input:focus, select:focus{
+  outline: none;
+}
+
+.login-container label {
+  margin-left: 3rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-right: 2rem;
+  color: #1DAE44;
+}
+
+.login-container select {
+  height: 4rem;
+  width: 22.5rem;
+  background-color: #F0F9F3;
+  border-color: #1DAE44;
+  border-width: 0.2rem;
+  border-radius: 0.5rem;
+  color: #1DAE44;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.login-container button {
+  height: 8.5rem;
+  width: 100%;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1DAE44;
+  border: none;
+  border-width: 0.3rem;
+  border-radius: 1rem;
+}
+
+.login-container button:hover {
+  background-color: #fff;
+  border: solid #1DAE44;
+  border-width: 0.3rem;
+  color: #1DAE44;
+}
+
+.form-item {
+    margin-bottom: 5rem;
+}
+
+.forget-pw {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+/* left side illustration animation */
+
+#_1 {
+    animation: _1 2100ms linear infinite normal forwards
+}
+
+@keyframes _1 {
+    0% {opacity: 0} 
+    14% {opacity: 1} 
+    100% {opacity: 1}
+}
+
+#_2 {
+    animation: _2 2100ms linear infinite normal forwards
+}
+
+@keyframes _2 {
+    0% {opacity: 0} 
+    14% {opacity: 0} 
+    28% {opacity: 1} 
+    100% {opacity: 1}
+}
+
+#_3 {
+    animation: _3 2100ms linear infinite normal forwards
+}
+
+@keyframes _3 {
+    0% {opacity: 0} 
+    28% {opacity: 0} 
+    42% {opacity: 1} 
+    100% {opacity: 1}
+}
+
+#_4 {
+    animation: _4 2100ms linear infinite normal forwards
+}
+
+@keyframes _4 {
+    0% {opacity: 0} 
+    42% {opacity: 0} 
+    57% {opacity: 1} 
+    100% {opacity: 1}
+}
+
+#_5 {
+    animation: _5 2100ms linear infinite normal forwards
+}
+
+@keyframes _5 {
+    0% {opacity: 0} 
+    57% {opacity: 0} 
+    71% {opacity: 1} 
+    100% {opacity: 1}
+}
+
+#_6 {
+    animation: _6 2100ms linear infinite normal forwards
+}
+
+@keyframes _6 {
+    0% {opacity: 0} 
+    71% {opacity: 0} 
+    85% {opacity: 1} 
+    100% {opacity: 1}
+} 
+
+#_7 {
+    animation: _7 2100ms linear infinite normal forwards
+}
+
+@keyframes _7 { 
+    0% {opacity: 0} 
+    85% {opacity: 0} 
+    100% {opacity: 1}
+} 
+
+/* media queries breakpoints */
+
+/* small laptop screen */
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 6px;
+    }
+
+    .logo img {
+      height: 100%;
+  }
+}
+
+/* tablet screen */
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 6px;
+    }
+
+    .logo img {
+      height: 100%;
+  }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr) 0.04fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .right-side {
+        grid-area: 2 / 1 / 3 / 2;
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+
+    .footer {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .left-side {
+        display: grid;
+        grid-template-columns: 0.7756fr 1.2244fr;
+        grid-template-rows: auto 0.717fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+    }
+
+    .logo {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .logo img {
+      height: 60%;
+  }
+
+    .desc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .booking-illustration {
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+}
+
+/* mobile screen */
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 4px;
+    }
+    .right-side {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+      height: 60%;
+    }
+
+    .desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .desc p {
+      text-align: center;
+    }
+
+    .booking-illustration {
+        display: none;
+    }
+}
